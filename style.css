@@ -20,24 +20,56 @@
   }
 
   .container {
+    display: flex;
+    justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 50px;
   }
+
+  .center {
+    padding: 50px;
+  }
   
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.col {
+  flex-basis: 50%;
+  padding: 20px;
+  text-align: center;
+}
+
+.col img {
+max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .col {
+    flex-basis: 100%;
+  }
+}
+
   h1 {
-    font-family: 'Karla', sans-serif;    font-weight: 400;
+    font-family: 'Karla', sans-serif;    
+    font-weight: 400;
     font-style: normal;
     font-size: 60px;
   }
   h2 {
-    font-family: 'Karla', sans-serif;    font-weight: 400;
+    font-family: 'Karla', sans-serif;    
+    font-weight: 400;
     font-style: normal;
     font-size: 30px;
     
   }
   h3 {
-    font-family: 'Karla', sans-serif;    font-style: normal;
+    font-family: 'Karla', sans-serif;    
+    font-style: normal;
     line-height: 1.2;
     margin-bottom: 1rem;
   }
@@ -56,17 +88,19 @@
     color: #000;
   }
   
-  .btn {
+  .button {
     display: inline-block;
-    padding: 12px 24px;
-    background-color: #333;
+    padding: 8px 12px;
+    background-color: #c5c3c3;
     color: #fff;
-    border-radius: 4px;
+    border-radius: 10px;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    position: absolute;
+    left: 100px;
   }
   
-  .btn:hover {
+  .button:hover {
     background-color: #a6a6a6;
   }
   
@@ -104,20 +138,22 @@
   }
   
   /* Hero section */
-  #hero {
+  #hero h1 {
     background-color: #f2f2f2;
-    padding: 150px 0;
+    font-size: 60px;
+    padding: 50px 100px;
     max-height: 400px;
   }
   
   #hero h2 {
     font-size: 30px;
+    padding: 0 100px;
     margin-bottom: 1rem;
   }
   
   /* About section */
   #about {
-    padding: 100px 0;
+    padding: 10px 0;
   }
   
   #about h2 {
@@ -125,10 +161,15 @@
     margin-bottom: 1.5rem;
   }
   
+  #about h3 {
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+  }
+
   /* Projects section */
   #projects {
     background-color: #fff;
-    padding: 100px 50px;
+    padding: 50px 50px;
     width: 100%;
   }
   
@@ -181,5 +222,7 @@
   
   #contact h2 {
     font-size: 30px;
-    margin-bottom: 1.5rem
+    margin-bottom: 1.5rem;
+    padding: 50px;
   }
+
