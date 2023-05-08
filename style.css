@@ -142,6 +142,7 @@
   /* Hero section */
   #hero h1 {
     background-color: #5CE1E6;
+    opacity: 75%;
     font-size: 60px;
     padding: 50px 100px;
     max-height: 400px;
